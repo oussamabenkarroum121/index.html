@@ -3,14 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professional Portfolio</title>
+  <title>Oussama | Portfolio</title>
   <style>
     /* ===== GLOBAL STYLES ===== */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       font-family: "Segoe UI", Tahoma, sans-serif;
       line-height: 1.6;
@@ -29,19 +25,20 @@
       position: relative;
     }
     header img {
-      width: 160px;
-      height: 160px;
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
-      border: 5px solid white;
+      border: 6px solid white;
       box-shadow: 0 5px 20px rgba(0,0,0,0.3);
       animation: float 4s ease-in-out infinite;
+      object-fit: cover;
     }
     @keyframes float {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-10px); }
     }
     header h1 {
-      font-size: 40px;
+      font-size: 42px;
       margin-top: 20px;
       font-weight: bold;
     }
@@ -80,9 +77,7 @@
       box-shadow: 0 6px 20px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
     }
-    section:hover {
-      transform: translateY(-5px);
-    }
+    section:hover { transform: translateY(-5px); }
     h2 {
       font-size: 26px;
       margin-bottom: 20px;
@@ -125,9 +120,7 @@
       box-shadow: 0 5px 15px rgba(0,0,0,0.1);
       transition: transform 0.3s ease;
     }
-    .projects img:hover {
-      transform: scale(1.03);
-    }
+    .projects img:hover { transform: scale(1.03); }
 
     /* ===== CONTACT ===== */
     .contact a {
@@ -140,9 +133,7 @@
       font-weight: bold;
       transition: 0.3s;
     }
-    .contact a:hover {
-      background: #0c47a1;
-    }
+    .contact a:hover { background: #0c47a1; }
 
     /* ===== FOOTER ===== */
     footer {
@@ -158,9 +149,9 @@
 
   <!-- HEADER -->
   <header>
-    <img src="https://i.ibb.co/5GT0rJj/profile-example.jpg" alt="Profile Photo">
-    <h1>Your Name</h1>
-    <p>💻 Full-Stack Developer | 🚀 Creative Thinker | 🌍 Tech Enthusiast</p>
+    <img src="1000108851.jpg" alt="Oussama Profile Photo">
+    <h1>Oussama</h1>
+    <p>💻 Web Developer | 🚀 Creative Thinker | 🌍 Based in Marrakech</p>
   </header>
 
   <!-- NAVIGATION -->
@@ -176,13 +167,10 @@
   <section id="about">
     <h2>About Me</h2>
     <p>
-      I am a highly motivated web developer with expertise in designing and 
-      building scalable, responsive, and visually engaging websites. 
-      My mission is to craft digital experiences that combine 
-      performance, creativity, and usability. With a strong foundation 
-      in both frontend and backend technologies, I aim to deliver solutions 
-      that not only meet business goals but also provide outstanding user 
-      experiences.
+      My name is Oussama, a passionate web developer from Marrakech.  
+      Currently, I am in my 2nd year at <b>ISTEA – Développement</b>.  
+      I enjoy building high-performance, responsive, and creative websites that combine strong technical foundations with engaging designs.  
+      My goal is to grow as a full-stack developer and contribute to impactful digital solutions.
     </p>
   </section>
 
@@ -190,28 +178,28 @@
   <section id="skills">
     <h2>Skills</h2>
     <ul>
-      <li>Frontend: HTML5, CSS3, JavaScript (ES6+), React</li>
-      <li>Backend: PHP, MySQL, REST APIs</li>
-      <li>Styling: Tailwind, Bootstrap, Responsive Design</li>
-      <li>Tools: Git, VS Code, Chrome DevTools</li>
-      <li>UI/UX: Wireframing, Figma, Accessibility Standards</li>
+      <li>Frontend: HTML5, CSS3, JavaScript (ES6+)</li>
+      <li>Backend: PHP, MySQL</li>
+      <li>Frameworks: Responsive Design, Bootstrap</li>
+      <li>Tools: Git, VS Code</li>
+      <li>Soft Skills: Leadership, Communication, Problem-Solving</li>
     </ul>
   </section>
 
   <!-- PROJECTS -->
   <section id="projects" class="projects">
     <h2>Projects</h2>
-    <p><b>Personal Portfolio:</b> A responsive website showcasing my career, skills, and projects.</p>
+    <p><b>Portfolio Website:</b> This site itself, showcasing my skills and background.</p>
     <img src="https://i.ibb.co/njfWxmx/project1-example.jpg" alt="Portfolio Project">
-    <p><b>Library Management System:</b> A PHP-based system to manage books, users, and loans efficiently.</p>
+    <p><b>Library Management System:</b> A PHP-based project to manage books, users, and loans efficiently.</p>
     <img src="https://i.ibb.co/g7P2DqK/project2-example.jpg" alt="Library Project">
   </section>
 
   <!-- EDUCATION -->
   <section id="education">
     <h2>Education</h2>
-    <p><b>Bachelor in Computer Science</b> – University of Casablanca (2020–2023)</p>
-    <p><b>Certification in Web Development</b> – Specialized in JavaScript & PHP</p>
+    <p><b>2nd Year in Development</b> – ISTEA, Marrakech</p>
+    <p><b>Baccalaureate in Sciences</b> – (Completed before ISTEA)</p>
   </section>
 
   <!-- CONTACT -->
@@ -224,274 +212,8 @@
 
   <!-- FOOTER -->
   <footer>
-    © 2025 Your Name – All Rights Reserved
+    © 2025 Oussama – All Rights Reserved
   </footer>
 
-</body>
-</html>
-    }
-    nav {
-      background: #fff;
-      padding: 12px;
-      text-align: center;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #1a73e8;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      color: #0c47a1;
-    }
-    section {
-      max-width: 950px;
-      margin: 50px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #1a73e8;
-      border-bottom: 3px solid #1a73e8;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
-    }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    ul li {
-      margin-bottom: 12px;
-      padding-left: 20px;
-      position: relative;
-    }
-    ul li::before {
-      content: "✔";
-      color: #1a73e8;
-      position: absolute;
-      left: 0;
-    }
-    .projects img {
-      width: 100%;
-      border-radius: 12px;
-      margin: 15px 0;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .contact a {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 20px;
-      background: #1a73e8;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      transition: 0.3s;
-      font-weight: bold;
-    }
-    .contact a:hover {
-      background: #0c47a1;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Header -->
-  <header>
-    <img src="https://i.ibb.co/5GT0rJj/profile-example.jpg" alt="My Photo">
-    <h1>Your Name</h1>
-    <p>Frontend Developer | Web Designer | Student</p>
-  </header>
-
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hello! I'm a motivated and creative web developer with a passion for
-      building modern, responsive, and user-friendly websites. I specialize in
-      frontend technologies such as HTML, CSS, and JavaScript, and I enjoy
-      bringing design ideas to life. My goal is to contribute to projects that
-      make a positive impact and to constantly improve my skills through learning
-      and practice.
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>HTML5, CSS3, JavaScript (ES6+)</li>
-      <li>Responsive Web Design & Accessibility</li>
-      <li>PHP & MySQL for backend</li>
-      <li>React and modern JS frameworks</li>
-      <li>UI/UX design principles</li>
-    </ul>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <p><b>Portfolio Website:</b> A personal portfolio showcasing my skills and projects.</p>
-    <img src="https://i.ibb.co/njfWxmx/project1-example.jpg" alt="Portfolio Project">
-    <p><b>Library Management System:</b> A PHP project for managing books, users, and loans.</p>
-    <img src="https://i.ibb.co/g7P2DqK/project2-example.jpg" alt="Library Project">
-  </section>
-
-  <!-- Education -->
-  <section id="education">
-    <h2>Education</h2>
-    <p>Bachelor in Computer Science - University of Casablanca</p>
-    <p>Certified in Web Development (HTML, CSS, JavaScript, PHP)</p>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <a href="mailto:youremail@gmail.com">📧 Email Me</a>
-    <a href="https://www.linkedin.com" target="_blank">🔗 LinkedIn</a>
-    <a href="https://github.com" target="_blank">💻 GitHub</a>
-  </section>
-
-</body>
-</html>
-    .btn-ghost{background:transparent;border:2px solid var(--accent);color:var(--accent)}
-    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
-    .project{background:linear-gradient(180deg,#fff,#fbfdff);border-radius:12px;padding:14px;border:1px solid rgba(14,165,233,0.06)}
-    .project h3{margin:0 0 6px;font-size:16px}
-    .project p{margin:0;color:var(--muted);font-size:14px}
-    .section-title{display:flex;align-items:center;gap:8px}
-    .section-title h3{margin:0;color:var(--accent)}
-    form{display:grid;gap:10px;margin-top:8px}
-    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6eef6;background:transparent;font-size:14px}
-    textarea{min-height:110px;resize:vertical}
-    .form-row{display:flex;gap:10px}
-    .form-row input{flex:1}
-    footer{margin-top:18px;text-align:center;color:var(--muted);font-size:13px}
-    @media (max-width:880px){.grid{grid-template-columns:1fr}.hero p{max-width:100%}.container{padding:14px}}
-  </style>
-</head>
-<body>
-  <div class="container">
-    <div class="grid">
-      <aside class="card">
-        <div class="profile">
-          <div class="avatar"><img src="https://via.placeholder.com/600x600.png?text=Your+Photo" alt="Your name"/></div>
-          <h1>Your Name</h1>
-          <p class="lead">Frontend developer • PHP & JavaScript • High-performance web</p>
-
-          <div class="meta">
-            <div class="meta-row"><span>Location</span><span style="color:var(--text)">Casablanca, Morocco</span></div>
-            <div class="meta-row"><span>Availability</span><span style="color:var(--text)">Open to work</span></div>
-          </div>
-
-          <div class="skills">
-            <h4>Skills</h4>
-            <div>
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">PHP</span>
-              <span class="tag">Responsive</span>
-            </div>
-          </div>
-        </div>
-      </aside>
-
-      <main>
-        <section class="card hero">
-          <div>
-            <h2>Hi — I'm <strong>Your Name</strong></h2>
-            <p>I build fast, accessible websites using semantic HTML, modern CSS and vanilla JavaScript. I focus on clean UI, good performance and maintainable code.</p>
-            <div class="buttons">
-              <a class="btn btn-primary" href="#projects">See Projects</a>
-              <a class="btn btn-ghost" href="/resume.pdf" download>Download Résumé</a>
-            </div>
-          </div>
-          <div style="min-width:180px;text-align:right;color:var(--muted)">
-            <div style="font-weight:700;font-size:18px;margin-bottom:6px">Web • UI</div>
-            <div style="font-size:13px">Contact: <a href="#contact" style="color:var(--accent);text-decoration:none">hello@youremail.com</a></div>
-          </div>
-        </section>
-
-        <section class="card" id="projects">
-          <div class="section-title"><h3>Projects</h3></div>
-          <div style="margin-top:12px" class="projects">
-            <article class="project">
-              <h3>Project One — IMC Calculator</h3>
-              <p>Simple BMI calculator with validation and result classification using vanilla JavaScript and semantic HTML.</p>
-            </article>
-
-            <article class="project">
-              <h3>Project Two — Job Eligibility Form</h3>
-              <p>Interactive form with client-side checks, accessibility features and keyboard support.</p>
-            </article>
-
-            <article class="project">
-              <h3>Project Three — Travel Cost Estimator</h3>
-              <p>Responsive UI that computes travel costs and shows breakdowns. Focus on UX and performance.</p>
-            </article>
-
-          </div>
-        </section>
-
-        <section class="card" id="contact">
-          <div class="section-title"><h3>Contact</h3></div>
-          <form id="contactForm" onsubmit="return handleSubmit(event)">
-            <div class="form-row">
-              <input type="text" id="name" placeholder="Your name" required />
-              <input type="email" id="email" placeholder="Your email" required />
-            </div>
-            <input type="text" id="subject" placeholder="Subject" />
-            <textarea id="message" placeholder="Message" required></textarea>
-            <div style="display:flex;justify-content:space-between;align-items:center">
-              <small id="status" style="color:var(--muted)"></small>
-              <button class="btn btn-primary" type="submit">Send message</button>
-            </div>
-          </form>
-        </section>
-
-        <footer class="card">
-          <div>Made with HTML, CSS & JavaScript · © <span id="year"></span> Your Name</div>
-        </footer>
-
-      </main>
-    </div>
-  </div>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    function handleSubmit(e){
-      e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const email = document.getElementById('email').value.trim();
-      const message = document.getElementById('message').value.trim();
-      const status = document.getElementById('status');
-      if(!name || !email || !message){
-        status.textContent = 'Please complete all required fields.';
-        return false;
-      }
-      status.textContent = 'Sending...';
-      setTimeout(()=>{
-        status.textContent = 'Message sent — I will contact you soon!';
-        document.getElementById('contactForm').reset();
-      },800);
-      return false;
-    }
-  </script>
 </body>
 </html>

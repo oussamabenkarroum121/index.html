@@ -3,37 +3,232 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Professional Portfolio</title>
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* ===== GLOBAL STYLES ===== */
+    * {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom, #f0f4ff, #ffffff);
-      color: #333;
+      box-sizing: border-box;
     }
+    body {
+      font-family: "Segoe UI", Tahoma, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(to right, #eef2f3, #ffffff);
+      color: #222;
+      scroll-behavior: smooth;
+    }
+    a { text-decoration: none; }
+
+    /* ===== HEADER ===== */
     header {
       background: linear-gradient(135deg, #1a73e8, #0c47a1);
       color: white;
       text-align: center;
-      padding: 60px 20px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      padding: 70px 20px;
+      position: relative;
     }
     header img {
       width: 160px;
       height: 160px;
       border-radius: 50%;
       border: 5px solid white;
-      margin-bottom: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
     header h1 {
-      font-size: 36px;
-      margin: 10px 0 5px;
+      font-size: 40px;
+      margin-top: 20px;
+      font-weight: bold;
     }
     header p {
       font-size: 18px;
       opacity: 0.9;
+    }
+
+    /* ===== NAVBAR ===== */
+    nav {
+      position: sticky;
+      top: 0;
+      background: white;
+      padding: 12px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      z-index: 999;
+    }
+    nav a {
+      margin: 0 18px;
+      font-weight: bold;
+      color: #1a73e8;
+      transition: 0.3s;
+    }
+    nav a:hover {
+      color: #0c47a1;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      background: white;
+      padding: 35px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    section:hover {
+      transform: translateY(-5px);
+    }
+    h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      border-left: 5px solid #1a73e8;
+      padding-left: 10px;
+      color: #1a73e8;
+    }
+
+    /* ===== ABOUT ===== */
+    #about p {
+      font-size: 17px;
+      color: #444;
+    }
+
+    /* ===== SKILLS ===== */
+    #skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      list-style: none;
+    }
+    #skills li {
+      padding: 12px;
+      background: #f5f8ff;
+      border-left: 4px solid #1a73e8;
+      border-radius: 8px;
+      transition: 0.3s;
+      font-weight: 500;
+    }
+    #skills li:hover {
+      background: #e9f1ff;
+      transform: translateX(5px);
+    }
+
+    /* ===== PROJECTS ===== */
+    .projects img {
+      width: 100%;
+      border-radius: 12px;
+      margin: 12px 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .projects img:hover {
+      transform: scale(1.03);
+    }
+
+    /* ===== CONTACT ===== */
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background: #1a73e8;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .contact a:hover {
+      background: #0c47a1;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0c47a1;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <img src="https://i.ibb.co/5GT0rJj/profile-example.jpg" alt="Profile Photo">
+    <h1>Your Name</h1>
+    <p>💻 Full-Stack Developer | 🚀 Creative Thinker | 🌍 Tech Enthusiast</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a highly motivated web developer with expertise in designing and 
+      building scalable, responsive, and visually engaging websites. 
+      My mission is to craft digital experiences that combine 
+      performance, creativity, and usability. With a strong foundation 
+      in both frontend and backend technologies, I aim to deliver solutions 
+      that not only meet business goals but also provide outstanding user 
+      experiences.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>Frontend: HTML5, CSS3, JavaScript (ES6+), React</li>
+      <li>Backend: PHP, MySQL, REST APIs</li>
+      <li>Styling: Tailwind, Bootstrap, Responsive Design</li>
+      <li>Tools: Git, VS Code, Chrome DevTools</li>
+      <li>UI/UX: Wireframing, Figma, Accessibility Standards</li>
+    </ul>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <p><b>Personal Portfolio:</b> A responsive website showcasing my career, skills, and projects.</p>
+    <img src="https://i.ibb.co/njfWxmx/project1-example.jpg" alt="Portfolio Project">
+    <p><b>Library Management System:</b> A PHP-based system to manage books, users, and loans efficiently.</p>
+    <img src="https://i.ibb.co/g7P2DqK/project2-example.jpg" alt="Library Project">
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <h2>Education</h2>
+    <p><b>Bachelor in Computer Science</b> – University of Casablanca (2020–2023)</p>
+    <p><b>Certification in Web Development</b> – Specialized in JavaScript & PHP</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <a href="mailto:youremail@gmail.com">📧 Email Me</a>
+    <a href="https://www.linkedin.com" target="_blank">🔗 LinkedIn</a>
+    <a href="https://github.com" target="_blank">💻 GitHub</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Your Name – All Rights Reserved
+  </footer>
+
+</body>
+</html>
     }
     nav {
       background: #fff;
